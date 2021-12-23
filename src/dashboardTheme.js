@@ -43,7 +43,8 @@ export const dashboardTheme = createTheme({
             fontSize: '1.6rem',
             fontWeight: 600,
             color: '#fff',
-            letterSpacing: '0.5px'
+            letterSpacing: '0.5px',
+            textTransform: 'capitalize',
         },
     },
   });
