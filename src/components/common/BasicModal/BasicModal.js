@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal';
 import CommonButton from '../CommonButton/CommonButton';
 import { modalStyles } from './styles';
 
-const BasicModal = ({ open, onClose, title, subTitle, content, validate }) => {
+const BasicModal = ({ open, onClose, title, subTitle, content, onSubmit }) => {
 
     return (
         <Modal open={open} onClose={onClose} >
@@ -23,7 +23,7 @@ const BasicModal = ({ open, onClose, title, subTitle, content, validate }) => {
                 <Box sx={modalStyles.buttons}>
                     <CommonButton
                         variant="contained"
-                        onClick={validate}
+                        onClick={onSubmit}
                     >
                         Submit
                     </CommonButton>
