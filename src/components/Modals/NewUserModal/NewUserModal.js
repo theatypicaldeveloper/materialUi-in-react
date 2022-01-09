@@ -12,7 +12,7 @@ const defaultInputValues = {
     phoneNumber: ''
 };
 
-const NewUserModal = ({ open, onClose }) => {
+const NewUserModal = ({ open, onClose, addNewUser }) => {
     const [values, setValues] = useState(defaultInputValues);
 
     const modalStyles = {
@@ -49,7 +49,7 @@ const NewUserModal = ({ open, onClose }) => {
     });
 
     const addUser = (data) => {
-        console.log(data);
+        addNewUser(data);
     };
 
     const handleChange = (value) => {
