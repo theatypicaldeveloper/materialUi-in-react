@@ -22,6 +22,9 @@ export const dashboardTheme = createTheme({
                             backgroundColor: 'rgba(0, 0, 0, 0.04)'
                         },
                     },
+                    '&.Mui-disabled': {
+                        backgroundColor: 'rgba(0, 0, 0, 0.12)',
+                    },
                 },
             },
         },
