@@ -21,6 +21,7 @@ const UserTable = () => {
         <DataTable
             rows={users}
             columns={columns}
+            loading={!users.length}
         />
     );
 };
